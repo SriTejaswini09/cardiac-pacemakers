@@ -32,10 +32,6 @@
 
 ## 👀 Preview
 
-<p align="center">
-  <img src="Screenshot_013108.png" alt="Evolution Timeline" width="600"/>
-</p>
-
 _Check out the live site →_  
 [https://<your-username>.github.io/<repo-name>/](https://<your-username>.github.io/<repo-name>/)
 
