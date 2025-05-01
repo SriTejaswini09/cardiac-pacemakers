@@ -4,7 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cardiac Pacemakers Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      background-image: url('Screenshot 2025-05-02 022715.png');
+      background-repeat: no-repeat;
+      background-size: 600px;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #f3e9dd;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #d8bfae;
+      color: #2c2c2c;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #5a3e36;
+      margin-top: 2rem;
+    }
+    section {
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 1rem auto;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+      margin-left: 1.5rem;
+    }
+    img {
+      display: block;
+      margin: 1.5rem auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #a68f79;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,25 +67,70 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>Cardiac pacemakers are implantable devices that help regulate abnormal heart rhythms by delivering electrical impulses to the myocardium. Since their invention in the 1950s, pacemakers have undergone a major evolution—from bulky external devices to compact, programmable, biocompatible implants...</p>
-    <p>Modern pacemakers have dramatically improved life expectancy and quality of life for patients with arrhythmias...</p>
+    <p>Cardiac pacemakers are implantable devices that help regulate abnormal heart rhythms by delivering precisely timed electrical impulses to the myocardium. Since their invention in the 1950s, pacemakers have evolved from large, external units to compact, programmable implants. They consist of a pulse generator (battery + electronics) and leads that conduct impulses to specific heart chambers.</p>
+    <p>Modern pacemakers include sensors that adjust pacing rate in response to patient activity, programmable logic for customized therapy, and wireless telemetry for non-invasive follow-up. These devices have significantly improved patient survival and quality of life, reducing hospitalizations and enabling active lifestyles. Typical implant procedures are minimally invasive, and device longevity ranges from 5 to 15 years depending on usage patterns.</p>
   </section>
 
   <section id="pacemaker-types">
     <h2>Introduction to Pacemaker Types</h2>
-    <p>Pacemakers can be classified based on the number of chambers they stimulate and how they synchronize heartbeats...</p>
+    <p>Pacemakers are classified by the number and location of chambers they stimulate, tailoring therapy to individual cardiac conditions:</p>
     <ul>
-      <li><strong>Single-Chamber Pacemaker:</strong> Stimulates only one chamber of the heart...</li>
-      <li><strong>Dual-Chamber Pacemaker:</strong> Coordinates pacing between the atrium and ventricle...</li>
-      <li><strong>Biventricular Pacemaker:</strong> Also known as CRT...</li>
+      <li><strong>Single-Chamber Pacemaker:</strong> Stimulates one chamber (atrium or ventricle).</li>
+      <li><strong>Dual-Chamber Pacemaker:</strong> Coordinates pacing between atrium and ventricle.</li>
+      <li><strong>Biventricular Pacemaker (CRT):</strong> Paces both ventricles to resynchronize contraction in heart failure.</li>
     </ul>
     <img src="types-common.jpg" alt="Diagram comparing single, dual, and biventricular pacemakers">
-    <img src="Screenshot 2025-05-02 013108.png" alt="Evolution of Cardiac Pacemakers">
+    <img src="Screenshot 2025-05-02 013108.png" alt="Evolution timeline of cardiac pacemakers">
   </section>
 
-  <!-- Additional detailed sections are assumed here... -->
+  <section id="single-chamber">
+    <h2>Single-Chamber Pacemaker</h2>
+    <p>Single-chamber devices are commonly used in patients with chronic atrial fibrillation or symptomatic bradycardia. They deliver impulses to either the right atrium (AAI mode) or right ventricle (VVI mode) and inhibit pacing when intrinsic rhythm is detected. Their simpler design reduces lead-related complications and cost.</p>
+    <p>Implantation involves fluoroscopic guidance to place a single lead, typically via the subclavian vein. Programming options include rate-responsive pacing, output tracking, and safety back-up modes to prevent asystole. These devices are reliable for stable heart rhythms but do not maintain atrioventricular synchrony.</p>
+    <img src="Screenshot 2025-05-02 012727.png" alt="Block diagram of single-chamber pacemaker">
+  </section>
+
+  <section id="dual-chamber">
+    <h2>Dual-Chamber Pacemaker</h2>
+    <p>Dual-chamber pacemakers use two leads—one in the right atrium and one in the right ventricle—to preserve natural atrioventricular (AV) timing. This reduces symptoms like fatigue, improves cardiac output, and prevents pacemaker syndrome.</p>
+    <p>Operating primarily in DDD mode (dual-paced, dual-sensed, dual response), these systems offer sophisticated algorithms to adjust AV delay during activity, manage atrial arrhythmias, and log atrial events. External programmers can modify parameters non-invasively.</p>
+    <img src="Screenshot 2025-05-02 013003.png" alt="Block diagram of dual-chamber pacemaker">
+  </section>
+
+  <section id="biventricular">
+    <h2>Biventricular Pacemaker (CRT)</h2>
+    <p>Also known as Cardiac Resynchronization Therapy (CRT), biventricular devices treat heart failure patients with interventricular conduction delays. A third lead is threaded into the coronary sinus to pace the left ventricle, restoring coordinated contraction and improving ejection fraction.</p>
+    <p>CRT reduces mitral regurgitation, alleviates symptoms, and enhances exercise capacity. Many CRT systems incorporate defibrillation (CRT-D) for sudden cardiac death prevention. Patient selection relies on QRS duration, NYHA class, and echocardiographic findings.</p>
+    <img src="Screenshot 2025-05-02 013607.png" alt="Lead placement diagram for biventricular pacemaker">
+  </section>
+
+  <section id="general-block-diagram">
+    <h2>General Block Diagram of a Pacemaker</h2>
+    <p>This diagram illustrates the core subsystems: impulse sensing, pulse generation, microprocessor control, telemetry interface, and battery. The sensing circuitry detects intrinsic cardiac events, and the controller triggers pacing output when needed.</p>
+    <img src="Screenshot 2025-05-02 012617.png" alt="General block diagram of a pacemaker">
+  </section>
+
+  <section id="electrical-safety">
+    <h2>Electrical Safety in Pacemaker Use</h2>
+    <p>Pacemakers incorporate electromagnetic shielding, over-current protection, and noise-filtering to resist interference from MRI, cell phones, or diathermy. Modern MRI-conditional devices allow scans under controlled conditions.</p>
+    <p>Leads use biocompatible insulation to prevent current leakage. Devices undergo defibrillation-proof testing and internal diagnostics for lead integrity. Output voltage and pulse width are limited to safe thresholds to avoid myocardial injury.</p>
+    <img src="Screenshot 2025-05-02 013809.png" alt="Magnetic field warning icon for pacemaker wearers">
+  </section>
+
+  <section id="regulatory-standards">
+    <h2>Regulatory &amp; Safety Standards</h2>
+    <p>Pacemakers are Class III devices requiring Premarket Approval (PMA) by the U.S. FDA (21 CFR §814). Manufacturers must demonstrate safety and effectiveness through bench, animal, and clinical data. In Europe, devices carry CE marking under the Medical Device Regulation (MDR).</p>
+    <p>Key standards include ISO 14708-1 (active implantable devices), IEC 60601-1 (electrical safety), IEC 60601-1-2 (EMC), and ISO 10993 (biocompatibility). Quality systems comply with FDA’s QSR (21 CFR Part 820) and ISO 13485.</p>
+  </section>
+
+  <section id="testing-validation">
+    <h2>Safety Testing &amp; Validation</h2>
+    <p>Bench tests simulate long-term use and mechanical stress, including accelerated aging and lead fatigue. Electrical safety tests follow IEC 60601 protocols for leakage current and dielectric strength. Biocompatibility is assessed per ISO 10993.</p>
+    <p>Software undergoes verification/validation (IEC 62304). Animal studies evaluate physiological response. Clinical trials establish efficacy and safety before approval. Post-market surveillance tracks real-world performance and adverse events, guiding design updates.</p>
+  </section>
+
   <section id="contact">
-    <h2>Team & Contact</h2>
+    <h2>Team &amp; Contact</h2>
     <p><strong>Team Member:</strong> sb3888@srmist.edu.in</p>
     <p><strong>Institution:</strong> SRM Institute of Science and Technology</p>
   </section>
